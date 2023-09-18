@@ -1,0 +1,126 @@
+.how-to-buy-section {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 80px;
+}
+.how-to-buy-main-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.688), rgba(0, 0, 0, 0.688)),
+    url("../assets/how-to-buy-image.jpg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.how-to-buy-title {
+  font-size: 24px;
+  color: var(--secondary-light-color);
+}
+.how-to-buy-subtitle {
+  font-size: 18px;
+  color: var(--secondary-light-color);
+}
+.tutorial-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  border-radius: 15px;
+}
+.step-container {
+  background-color: var(--secondary-light-color);
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.504);
+  border-radius: 15px;
+  padding: 15px 0;
+}
+.step-title {
+  font-size: 18px;
+  width: 90%;
+}
+.step-p {
+  font-size: 16px;
+  width: 90%;
+}
+.step-icon-1,
+.step-icon-2,
+.step-icon-3,
+.step-icon-4,
+.step-icon-5,
+.step-icon-6,
+.step-icon-7,
+.step-icon-8 {
+  width: 80px;
+  height: 80px;
+}
+.step-icon-1 {
+  color: green;
+}
+.step-icon-2 {
+  color: rgb(0, 94, 255);
+}
+.step-icon-3 {
+  color: rgb(149, 0, 255);
+}
+.step-icon-4 {
+  color: green;
+}
+.step-icon-5 {
+  color: goldenrod;
+}
+.step-icon-6 {
+  color: rgb(167, 167, 167);
+}
+.step-icon-7 {
+  color: crimson;
+}
+.step-icon-8 {
+  color: #7e5e40;
+}
+
+@media (max-width: 768px) {
+  .how-to-buy-title {
+    font-size: 18px;
+  }
+  .how-to-buy-subtitle {
+    font-size: 14px;
+  }
+  .tutorial-container {
+    width: 95%;
+  }
+  .step-title {
+    font-size: 16px;
+  }
+  .step-p {
+    font-size: 14px;
+  }
+  .step-icon-1,
+  .step-icon-2,
+  .step-icon-3,
+  .step-icon-4,
+  .step-icon-5,
+  .step-icon-6,
+  .step-icon-7,
+  .step-icon-8 {
+    width: 60px;
+    height: 60px;
+  }
+}

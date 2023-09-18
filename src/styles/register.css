@@ -1,0 +1,204 @@
+.register-section {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-container {
+  height: 80%;
+  width: 70%;
+  display: flex;
+}
+.register-text-half {
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/register-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.register-text-half-box {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 15px;
+  color: var(--secondary-light-color);
+}
+.register-text-half-title {
+  font-size: 1.8rem;
+}
+.register-text-half-p {
+  font-size: 1.2rem;
+  width: 90%;
+}
+.register-text-half-p span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.register-form-half {
+  width: 50%;
+  height: 100%;
+  background-color: var(--secondary-light-color);
+}
+.register-form-title {
+  font-size: 1.6rem;
+}
+.register-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.username-input-box,
+.email-input-box,
+.password-input-box {
+  position: relative;
+  width: 70%;
+  z-index: 1;
+}
+
+.register-username-input,
+.register-email-input,
+.register-password-input {
+  height: 1.5rem;
+  width: 100%;
+  z-index: 2;
+  outline: none;
+  border: none;
+  font-size: 1.05rem;
+  border-bottom: 1px solid gray;
+  background-color: var(--secondary-light-color);
+  transition: all 0.2s ease-in;
+}
+.username-label,
+.r-email-label,
+.r-password-label {
+  position: absolute;
+  z-index: 4;
+  top: 4px;
+  left: 6px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.focused-input {
+  top: -25px;
+  left: 0;
+  font-size: 1.1rem;
+}
+.username-incorrect,
+.username-correct,
+.email-incorrect,
+.email-correct {
+  position: absolute;
+  z-index: 4;
+  color: #df2821;
+  top: 3px;
+  right: 0;
+  width: 20px;
+  transition: all 0.2s ease-in;
+}
+.password-correct {
+  position: absolute;
+  z-index: 4;
+  top: 3px;
+  right: 0;
+  width: 20px;
+}
+.username-correct,
+.email-correct {
+  color: green;
+}
+.incorrect {
+  border: none;
+  border-bottom: 1px solid #df2821;
+}
+.bad-input-message {
+  margin-top: 5px;
+  width: 100%;
+  color: #df2821;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+}
+.bad-input-message-hidden {
+  display: none;
+}
+.r-register-button {
+  background-color: #008000;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  width: 20%;
+  height: 7%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.r-register-button:hover {
+  background-color: #006900;
+}
+.already-have-an-account {
+  font-size: 0.9rem;
+}
+.already-have-an-account-link {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1300px) {
+  .register-container {
+    width: 95%;
+    height: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .register-text-half-title {
+    font-size: 24px;
+  }
+  .register-text-half-p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .register-section {
+    margin-top: 20px;
+    align-items: start;
+  }
+  .register-text-half {
+    display: none;
+  }
+  .register-form-half {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
+  .r-register-button {
+    width: 50%;
+  }
+}
+@media (max-height: 700px) {
+  .register-form {
+    height: 80%;
+    padding: 40px 0 0 0;
+  }
+  .register-section {
+    height: 120vh;
+  }
+  .login-image-container {
+    height: 100%;
+  }
+}

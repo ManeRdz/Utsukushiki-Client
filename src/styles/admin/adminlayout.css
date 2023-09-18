@@ -1,0 +1,79 @@
+.admin-sec-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-light-color);
+}
+.admin-layout-maincontainer {
+  width: 65%;
+  height: 80%;
+  border-radius: 20px;
+  background-color: var(--secondary-light-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.admin-layout-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 50px;
+  left: -30px;
+  width: 50px;
+  padding: 5px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: rgb(92, 0, 179);
+}
+.admin-layout-nav-links {
+  position: relative;
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.nav-links-icons {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.nav-links-span {
+  position: absolute;
+  top: 6px;
+  left: 60px;
+  border-radius: 5px;
+  background-color: rgb(98, 0, 190);
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  transform: translateX(-20%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.nav-links-icons:hover {
+  background-color: rgb(70, 0, 135);
+}
+.nav-links-icons:hover + .nav-links-span {
+  transform: translateX(0);
+  opacity: 1;
+}
+.admin-layout-title {
+  font-size: 1.5rem;
+  color: black;
+}
+.admin-layout {
+  width: 93%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

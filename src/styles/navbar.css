@@ -1,0 +1,300 @@
+header {
+  background-color: var(--primary-light-color);
+  position: sticky;
+  top: 0;
+  height: 200px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  z-index: 100;
+  transition: top 0.3s ease-in;
+}
+.hidden {
+  top: -150px;
+  transition: top 0.3s ease-in;
+}
+.shadow {
+  box-shadow: 0 0 10px black;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: emerge 0.8s normal ease;
+}
+.location {
+  width: 30%;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.location-icon {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+.logo img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.social-media {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  row-gap: 10px;
+  font-size: 1rem;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+.socialLinks:hover {
+  transform: translate(-5%, 0);
+}
+.whatsapp {
+  color: rgb(37, 211, 102);
+}
+.facebook {
+  color: rgb(24, 119, 242);
+}
+.instagram {
+  color: var(--primary-color);
+}
+.navbar-responsive {
+  display: none;
+  width: 90%;
+}
+.logo-responsive-img {
+  width: 130px;
+}
+.darkInner,
+.darkInner::after,
+.darkInner::before {
+  background-color: var(--secondary-light-color);
+}
+.lightInner,
+.lightInner::after,
+.lightInner::before {
+  background-color: var(--secondary-dark-color);
+}
+.hamburger.hamburger--squeeze.is-active .darkInner::after {
+  background-color: var(--secondary-light-color);
+}
+.hamburger.hamburger--squeeze.is-active .darkInner {
+  background-color: var(--secondary-light-color);
+}
+.hamburger.hamburger--squeeze.is-active .lightInner::after {
+  background-color: var(--secondary-dark-color);
+}
+.hamburger.hamburger--squeeze.is-active .lightInner {
+  background-color: var(--secondary-dark-color);
+}
+.panel {
+  background-color: var(--secondary-light-color);
+  position: absolute;
+  width: 75vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+  transition: all 0.3s ease;
+}
+.panel-hidden {
+  transform: translateX(-100%);
+}
+
+.navbar {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: fromLeft 1s normal ease;
+}
+.nav-links {
+  position: relative;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px 0 10px;
+}
+.user {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+.username-account {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.my-account-show-more {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--secondary-light-color);
+  top: 45px;
+  left: -40px;
+  width: 130px;
+  padding: 5px 5px 15px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  cursor: auto;
+}
+.logout-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-light-color);
+  border: none;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-links.user:hover .my-account-show-more {
+  opacity: 1;
+  visibility: visible;
+}
+.my-account-show-more:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.my-account-option {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+.my-account-option:hover {
+  text-decoration: underline;
+}
+.nav-cart {
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cart-container {
+  position: relative;
+}
+.cart {
+  font-size: 1.9rem;
+}
+.cart-products {
+  position: absolute;
+  width: 18px;
+  height: 16px;
+  padding: 2px;
+  top: -10px;
+  right: -10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 1rem;
+  color: white;
+}
+.session-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.login-button,
+.register-button {
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  padding: 7px;
+  transition: all 0.2s ease-in;
+  background-color: var(--primary-color);
+  color: var(--primary-light-color);
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #c70017;
+  border-color: #c70017;
+}
+.dark-modeBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.sun {
+  color: rgb(232, 197, 0);
+}
+.nav-links::after {
+  content: "";
+  background-color: var(--primary-color);
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav-links:hover::after {
+  width: 100%;
+}
+.cart-container:hover {
+  animation: jump 0.5s normal ease;
+}
+.location:hover {
+  transform: scale(1.03);
+}
+.active::after {
+  width: 100%;
+}
+.panel-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media (max-width: 1500px) {
+  .logo {
+    width: 80%;
+  }
+  .navbar {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+  .logo {
+    display: none;
+  }
+  .social-media {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .my-account-show-more {
+    top: -100%;
+    left: 80px;
+  }
+}
