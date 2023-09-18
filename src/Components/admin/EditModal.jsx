@@ -114,6 +114,7 @@ const EditModal = () => {
             type="text"
             maxLength={50}
             name="productName"
+            id="productName"
             className="edit-name-input"
           />
 
@@ -126,6 +127,7 @@ const EditModal = () => {
             value={productToEdit.productDescription}
             maxLength={255}
             name="productDescription"
+            id="productDescription"
             cols="60"
             rows="6"
             className="edit-description-input"
@@ -139,6 +141,7 @@ const EditModal = () => {
             onChange={(e) => handleChange(e)}
             className="edit-category-select"
             name="productCategory"
+            id="productCategory"
           >
             <option value="Kitchen">Kitchen</option>
             <option value="Cleaning Solutions">Cleaning Solutions</option>
@@ -157,6 +160,7 @@ const EditModal = () => {
             value={productToEdit.productPrice}
             type="number"
             name="productPrice"
+            id="productPrice"
             className="edit-price-input"
           />
 
@@ -169,6 +173,7 @@ const EditModal = () => {
             value={productToEdit.productStock}
             type="number"
             name="productStock"
+            id="productStock"
             className="edit-price-input"
           />
 
@@ -181,6 +186,7 @@ const EditModal = () => {
             type="file"
             accept=".jpg, .jpeg, .png"
             name="ProductImage"
+            id="ProductImage"
             className="edit-image-input"
           />
           <span>Only .jpg .png .jpeg files</span>

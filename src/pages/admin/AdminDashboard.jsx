@@ -79,7 +79,7 @@ const AdminDashboard = () => {
         {adminProducts.map((product) => (
           <li key={product.productId} className="admin-product-item">
             <img
-              src={`https://localhost:7139/${product.productDir.replace(
+              src={`https://utsukushiki-ecommerce-project.azurewebsites.net/${product.productDir.replace(
                 "wwwroot/",
                 ""
               )}`}

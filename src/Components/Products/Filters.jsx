@@ -26,6 +26,7 @@ const Filters = ({ setFilters, filters }) => {
               darkMode ? "category-select darkInputs" : "category-select"
             }
             name="category"
+            id="category"
             onChange={categoryChange}
             value={filters.category}
           >
@@ -43,13 +44,14 @@ const Filters = ({ setFilters, filters }) => {
         <label className="price-label" htmlFor="price">
           Filter by price
         </label>
-        <div name="price" className="price-inputs">
+        <div name="price" id="price" className="price-inputs">
           <div className="minPrice-container">
             <label className="minPrice-title" htmlFor="minPrice">
               Min Price $
             </label>
             <input
               name="minPrice"
+              id="minPrice"
               type="number"
               min="0"
               max="1500"
@@ -66,6 +68,7 @@ const Filters = ({ setFilters, filters }) => {
             </label>
             <input
               name="maxPrice"
+              id="maxPrice"
               type="number"
               min="20"
               max="2500"
