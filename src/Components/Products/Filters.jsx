@@ -36,6 +36,7 @@ const Filters = ({ setFilters, filters }) => {
             <option value="Living Room">Living Room</option>
             <option value="Technology">Technology</option>
             <option value="Bathroom">Bathroom</option>
+            <option value="Bedroom">Bedroom</option>
           </select>
           <AiOutlineDown className="select-arrow" />
         </div>
