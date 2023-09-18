@@ -32,7 +32,7 @@ const Filters = ({ setFilters, filters }) => {
           >
             <option value="all">All</option>
             <option value="Kitchen">Kitchen</option>
-            <option value="Cleaning Solutions">Cleaning solutions</option>
+            <option value="Laundry">Cleaning Appliances</option>
             <option value="Living Room">Living Room</option>
             <option value="Technology">Technology</option>
             <option value="Bathroom">Bathroom</option>
