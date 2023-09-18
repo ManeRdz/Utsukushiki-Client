@@ -103,7 +103,7 @@ const AdminAddProduct = () => {
       >
         <option value="default">--Select a category--</option>
         <option value="Kitchen">Kitchen</option>
-        <option value="Laundry">Cleaning Solutions</option>
+        <option value="Cleaning Appliances">Cleaning Appliances</option>
         <option value="Living Room">Living Room</option>
         <option value="Technology">Technology</option>
         <option value="Bedroom">Bedroom</option>
