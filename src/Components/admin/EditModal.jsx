@@ -146,7 +146,7 @@ const EditModal = () => {
             <option value="Kitchen">Kitchen</option>
             <option value="Cleaning Solutions">Cleaning Solutions</option>
             <option value="Bathroom">Bathroom</option>
-            <option value="Bedroom">Kitchen</option>
+            <option value="Bedroom">Bedroom</option>
             <option value="Living Room">Living Room</option>
             <option value="Technology">Technology</option>
           </select>
