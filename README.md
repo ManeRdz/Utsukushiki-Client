@@ -15,7 +15,7 @@ The purpose of this project is to learn and practice concepts related to:
 
 #### **Project Description**
 
-This project represents the client side of the Utsukushiki Home Store Application. It is a ReactJS SPA (Single Page Application). You can explore it by following this link:  [Utsukushiki Home Store ](https://manerdz.github.io/Utsukushiki-Client/ "Utsukushiki Home Store ")
+This project represents the client side of the Utsukushiki Home Store Application. It is a ReactJS SPA (Single Page Application). You can explore it by following this link:  [Utsukushiki Home Store ](manerdz.github.io/Utsukushiki-Client/ "Utsukushiki Home Store ")
 
 #### **In this project, I utilized the following:**
 
