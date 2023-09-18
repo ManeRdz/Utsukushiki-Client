@@ -32,10 +32,10 @@ This project represents the client side of the Utsukushiki Home Store Applicatio
 
 - Friendly and easy-to-use interface for the user.
 
-- Simple notification system to give feedback to the user as they go through the application and make their experience more friendly..
+- Simple notification system to give feedback to the user as they go through the application and make their experience more friendly.
 
 
-#### **Some screen shots of the swagger page: **
+#### **Some screen shots of the project:**
 
 
 ![frontend1](https://github.com/ManeRdz/Utsukushiki-Client/assets/135761295/6b0b8f51-26ee-4859-a880-98995bb04127)
