@@ -1,5 +1,9 @@
 # UTSUKUSHIKI HOME STORE FRONT END Simulated E-commerce App
 
+#### **Demo account**
+Email: test@test.com
+Password: test
+
 ####  **What is Utsukushiki?** ( A simulated e-commerce App)
 
 Utsukushiki is more than just a home store; it's a place where you can turn your dreams into reality. Have you always wanted a minimalist, modern, and elegant living room? We can make that dream come true! Dreaming of the most comfortable bedroom for the best rest? We can make it a reality! We are not just a store; we are your life partners, here to help you build your dream home.
